@@ -20,11 +20,6 @@ html {
     font-size: 40%;
   }
 }
-@media only screen and (max-width: 40.625em) {
-  html {
-    font-size: 35%;
-  }
-}
 
 body {
   position: relative;
@@ -32,16 +27,29 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   height: 100vh;
   background-image: linear-gradient(to top left, #753682, #bf2e34);
   color: #333;
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
 }
+@media only screen and (max-width: 50em) {
+  body {
+    justify-content: flex-start;
+    height: 70rem;
+    /* background-size: cover; */
+  }
+}
+@media only screen and (max-width: 40.625em) {
+  body {
+    height: 110rem;
+  }
+}
 
 @media only screen and (max-width: 40.625em) {
   header {
-    height: 4vh;
+    /* height: 4vh; */
   }
 }
 
@@ -59,8 +67,8 @@ main {
 }
 @media only screen and (max-width: 40.625em) {
   main {
-    width: 100vw;
-    height: 96vh;
+    width: 99vw;
+    height: 120rem;
     background-color: transparent;
     border: none;
   }
@@ -114,6 +122,11 @@ main {
   cursor: pointer;
   transition: all .3s;
 }
+@media only screen and (max-width: 50em) {
+  .btn--rules {
+    font-size: 3rem;
+  }
+}
 
 .btn--rules:hover,
 .btn--rules:active {
@@ -135,6 +148,11 @@ main {
 .list li {
   margin-left: 3rem;
   font-size: 1.8rem;
+}
+@media only screen and (max-width: 50em) {
+  .list li {
+    font-size: 2.5rem;
+  }
 }
 
 /* ------ POPUP ------ */
@@ -188,6 +206,11 @@ main {
 }
 @media only screen and (max-width: 40.625em) {
   .player {
+    /* height: 95%; */
+  }
+}
+@media only screen and (max-width: 40.625em) {
+  .player {
     padding: 2rem;
   }
 }
@@ -225,6 +248,12 @@ main {
   color: #c7365f;
   font-size: 8rem;
   font-weight: 300;
+}
+@media only screen and (max-width: 40.625em) {
+  .score {
+    color: #333;
+    font-size: 7rem;
+  }
 }
 
 .current {
@@ -327,8 +356,8 @@ main {
     left: 0;
     transform: translateX(0);
     /* padding: 0.5rem 2rem;
-    font-size: 1.5rem;
     font-weight: 600; */
+    font-size: 2.5rem;
   }
 }
 
