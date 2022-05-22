@@ -121,6 +121,13 @@ const closeRules = function() {
   popupEl.classList.add('hidden');
   overlayEl.classList.add('hidden');
 }
+const closeRulesOnESC = function(e) {
+  if(e.key === 'Escape' && !popupEl.classList.contains('hidden')) {
+    closeRules();
+  }
+}
 
 btnRulesEl.addEventListener('click', openRules);
 btnCloseEl.addEventListener('click', closeRules);
+overlayEl.addEventListener('click', closeRules);
+document.addEventListener('keydown', closeRulesOnESC);

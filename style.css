@@ -327,6 +327,11 @@ main {
   transform: translate(-50%, 3px);
   box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
 }
+@media only screen and (max-width: 40.625em) {
+  .btn:active {
+    transform: translate(0, 3px);
+  }
+}
 
 .btn:focus {
   outline: none;
