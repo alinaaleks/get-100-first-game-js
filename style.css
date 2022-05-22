@@ -27,35 +27,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   height: 100vh;
   background-image: linear-gradient(to top left, #753682, #bf2e34);
   color: #333;
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
 }
-@media only screen and (max-width: 50em) {
-  body {
-    justify-content: flex-start;
-    height: 70rem;
-    /* background-size: cover; */
-  }
-}
-@media only screen and (max-width: 40.625em) {
-  body {
-    height: 110rem;
-  }
-}
-
-@media only screen and (max-width: 40.625em) {
-  header {
-    /* height: 4vh; */
-  }
-}
 
 main {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100rem;
   height: 60rem;
   background-color: rgba(255,255,255,.35);
@@ -67,22 +48,18 @@ main {
 }
 @media only screen and (max-width: 40.625em) {
   main {
+    /* overflow: visible; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 99vw;
-    height: 120rem;
+    height: 95vh;
     background-color: transparent;
     border: none;
   }
 }
 
 /* ------ SECTIONS ------ */
-/* .rules {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 8rem;
-  padding: .5rem;
-} */
-
 .playfield {
   display: flex;
   position: relative;
@@ -90,21 +67,12 @@ main {
 }
 @media only screen and (max-width: 40.625em) {
   .playfield {
-    /* display: grid;
-    grid-template-rows: minmax(min-content, 1fr) minmax(min-content, 1fr) min-content minmax(min-content, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-    row-gap: 2rem;
-    justify-content: center;
-    align-content: center; */
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 2rem;
     width: 95%;
     margin: 0 auto;
-    /* height: 100vh; */
   }
 }
 
@@ -351,12 +319,9 @@ main {
 }
 @media only screen and (max-width: 40.625em) {
   .btn {
-    /* align-self: start; */
     position: static;
     left: 0;
     transform: translateX(0);
-    /* padding: 0.5rem 2rem;
-    font-weight: 600; */
     font-size: 2.5rem;
   }
 }
