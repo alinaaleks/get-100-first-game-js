@@ -92,6 +92,7 @@ main {
 }
 @media only screen and (max-width: 50em) {
   .btn--rules {
+    padding-top: 2rem;
     font-size: 3rem;
   }
 }
@@ -179,7 +180,7 @@ main {
 }
 @media only screen and (max-width: 40.625em) {
   .player {
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 @media only screen and (max-width: 40.625em) {
@@ -220,7 +221,7 @@ main {
 @media only screen and (max-width: 40.625em) {
   .score {
     color: #333;
-    font-size: 7rem;
+    font-size: 6rem;
   }
 }
 
@@ -237,6 +238,7 @@ main {
 @media only screen and (max-width: 40.625em) {
   .current {
     width: 20rem;
+    padding: 1rem;
   }
 }
 
@@ -246,9 +248,19 @@ main {
   text-transform: uppercase;
   font-size: 1.7rem;
 }
+@media only screen and (max-width: 40.625em) {
+  .current__label {
+   font-size: 2rem;
+  }
+}
 
 .current__score {
   font-size: 3.5rem;
+}
+@media only screen and (max-width: 40.625em) {
+  .current__score {
+   font-size: 4rem;
+  }
 }
 
 /* ------ ACTIVE PLAYER FIELDS ------ */
